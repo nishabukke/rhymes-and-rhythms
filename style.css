@@ -102,6 +102,9 @@ a{
 
 /* HOME SLIDER CSS START */
 
+.home-slider {
+    position: relative;
+}
 
 .slider-container {
 	display: flex;
@@ -147,7 +150,7 @@ a{
 .slider-container-overlay {
     height: 450px;
     width: 100%;
-    top: 15.5%;
+    top: 0%;
     left: 0;
     position: absolute;
     background-color: #000000;
@@ -221,7 +224,7 @@ a{
 }
 
 .curve-shape-bottom {
-    bottom: 90px;
+    bottom: 0px;
 }
 
 .curve-shape svg {
@@ -242,7 +245,7 @@ a{
 .call-us-header{
     position: absolute;
     right: 5%;
-    bottom: 12%;
+    bottom: 0%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -412,7 +415,7 @@ a{
 }
 
 .staff__container .curve-shape-bottom {
-    bottom: 0px;
+    bottom: -1px;
 }
 
 .staff__container .curve-shape-bottom svg .curve-shape-fill {
@@ -583,7 +586,7 @@ a{
 /* FOOTER CSS END */
 
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .slider-container-overlay {
         top: 18%;
     }
@@ -610,4 +613,4 @@ a{
     .call-us-header{
         bottom: 10%;
     }
-}
+} */

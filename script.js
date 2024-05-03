@@ -33,3 +33,7 @@ controls.forEach(control => {
 		int = setInterval(changeSlides, 4000);
 	});
 });
+
+
+
+ 

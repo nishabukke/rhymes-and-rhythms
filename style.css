@@ -472,6 +472,84 @@ a{
 
 /* TESTIMONIAL CONTAINER CSS END */
 
+/* ENQUIRY FORM CSS START */
+
+.enquiry-form__container {
+    background-color: #F6F3EC;
+    position: relative;
+    background-image: url('images/staff-bg-img.png');
+    background-position: 90% -6px;
+    background-repeat: no-repeat;
+    background-size: 8% auto;
+    background-attachment: scroll;
+}
+
+.enquiry-form__container.section--lg{
+    padding: 100px 0px 50px 0px;
+}
+
+.enquiry-form__container .curve-shape svg .curve-shape-fill {
+    fill: #fff;
+}
+
+
+.enquiry-form__container .curve-shape-bottom {
+    bottom: -1px;
+}
+
+.enquiry-form__container .curve-shape-bottom svg .curve-shape-fill {
+    fill: #fff;
+}
+
+.enquiry-form-inner form{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.13);
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.enquiry-form-inner .form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.enquiry-form-inner .form-input label {
+    font-weight: 700;
+}
+
+.enquiry-form-inner .form-input input {
+    padding: 12px 10px;
+    border: 1px solid #eaeaea;
+    background-color: #fafafa;
+}
+
+.enquiry-form-inner .form-input input:focus{
+    outline: none;
+    border: 2px solid #eaeaea;
+}
+
+.submit-btn{
+    color: #fff;
+    background-color: #F7971D;
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 15px 30px;
+    float: inline-end;
+    font-family: 'HeadingFont';
+    font-weight: 400;
+    border: none;
+    width: max-content;
+    text-align: center;
+}
+
+/* ENQUIRY FORM CSS END */
+
+
 /* CONTACT BANNER CSS START */
 
 .contact-banner-inner{
@@ -583,34 +661,140 @@ a{
     margin: 0;
 }
 
+
+
+
 /* FOOTER CSS END */
 
 
-/* @media screen and (max-width: 1024px) {
-    .slider-container-overlay {
-        top: 18%;
+@media screen  and (max-width:450px) {
+    .middle__header, .call-us-header{
+        display: none;
     }
 
-    .curve-shape-bottom {
-        bottom: 4px;
+    .section--lg, .staff__container.section--lg, .contact-banner-inner, .enquiry-form__container.section--lg{
+        padding: 50px 20px;
     }
 
-    .call-us-header {
-        bottom: 0%;
+    .bold-heading, .top-staff-content{
+        font-size: 24px;
     }
+
+    .slider-container .slider-content, .about-inner, .why-choose-cards, .staff-inner, .contact-banner-inner, .footer-content .container, .enquiry-form-inner form{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        text-align: center;
+    }
+
+    .left-content{
+        text-align: center;
+    }
+
+    .left-content h1{
+        font-size: 36px;
+    }
+
+    .left-content p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .left-staff-img img, .bottom-staff-img img {
+        height: 220px;
+    }
+
+    .about-right-title, .right-staff-title {
+        font-size: 18px;
+    }
+
+    .why-choose-cards .card-img-top{
+        height: 200px;
+    }
+
+    .testimonial__container .swiper{
+        width: 100%;
+    }
+
+    .testimonial-content{
+        padding: 0;
+    }
+
+    .right-contact-banner a{
+        float: none;
+    }
+
+    .blue-spacer {
+        height: 93px;
+    }
+
+    .copyright{
+        font-size: 12px;
+    }
+
 }
 
-@media screen and (min-width:1440px) {
-    
-    .curve-shape-bottom {
-        bottom: 63px;
+@media screen  and (max-width:768px) {
+    .middle__header, .call-us-header{
+        display: none;
     }
 
-    .slider-container-overlay {
-        top: 16.5%;
+    .section--lg, .staff__container.section--lg, .contact-banner-inner{
+        padding: 50px 20px;
     }
 
-    .call-us-header{
-        bottom: 10%;
+    .bold-heading, .top-staff-content{
+        font-size: 24px;
     }
-} */
+
+    .slider-container .slider-content, .about-inner, .why-choose-cards, .staff-inner, .contact-banner-inner, .footer-content .container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        text-align: center;
+    }
+
+    .left-content{
+        text-align: center;
+    }
+
+    .left-content h1{
+        font-size: 36px;
+    }
+
+    .left-content p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .left-staff-img img, .bottom-staff-img img {
+        height: 220px;
+    }
+
+    .about-right-title, .right-staff-title {
+        font-size: 18px;
+    }
+
+    .why-choose-cards .card-img-top{
+        height: 200px;
+    }
+
+    .testimonial__container .swiper{
+        width: 100%;
+    }
+
+    .testimonial-content{
+        padding: 0;
+    }
+
+    .right-contact-banner a{
+        float: none;
+    }
+
+    .blue-spacer {
+        height: 93px;
+    }
+
+    .copyright{
+        font-size: 12px;
+    }
+
+}

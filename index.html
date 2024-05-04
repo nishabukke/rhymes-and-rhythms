@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Rhymes & Rhythms</title>
 </head>
@@ -24,8 +25,8 @@
                 <a href="#footer">Contact</a>
             </div>
             <div class="right__header">
-                <a href="#"><span class="fa-brands fa-facebook"></span></a>
-                <a href="#"><span class="fa-brands fa-instagram"></span></a>
+                <a href="https://www.facebook.com/rhymesandrhythmsdc/"><span class="fa-brands fa-facebook"></span></a>
+                <a href="https://www.instagram.com/rhymesandrhythmsdc/"><span class="fa-brands fa-instagram"></span></a>
                 <a href="https://wa.me/9920342271"><span class="fa-brands fa-whatsapp"></span></a>
             </div>
         </div>
@@ -251,29 +252,39 @@
             <div class="enquiry-form-inner container">
                 <div class="bold-heading text-center">Curious About Daycare? Ask Away!</div>
                 <form action="validate.php" method="post" id="contact-form">
-                    <div class="form-input">
-                        <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="" placeholder="First Name...">
+                    <div class="form-group">
+                        <div class="form-input">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="" placeholder="First Name...">
+                        </div>
+                        <div class="form-input">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="" placeholder="Last Name...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-input">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="" placeholder="Phone Number...">
+                        </div>
+                        <div class="form-input">
+                            <label for="chname">Child's Name</label>
+                            <input type="text" name="chname" id="" placeholder="Child's Name...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-input">
+                            <label for="chdob">Child's DOB</label>
+                            <input type="date" name="chdob" id="" placeholder="Child's DOB...">
+                        </div>
+                        <div class="form-input">
+                            <label for="email">Email Id</label>
+                            <input type="email" name="email" id="" placeholder="Email Id...">
+                        </div>
                     </div>
                     <div class="form-input">
-                        <label for="lname">Last Name</label>
-                        <input type="text" name="lname" id="" placeholder="Last Name...">
-                    </div>
-                    <div class="form-input">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="" placeholder="Phone Number...">
-                    </div>
-                    <div class="form-input">
-                        <label for="chname">Child's Name</label>
-                        <input type="text" name="chname" id="" placeholder="Child's Name...">
-                    </div>
-                    <div class="form-input">
-                        <label for="chdob">Child's DOB</label>
-                        <input type="date" name="chdob" id="" placeholder="Child's DOB...">
-                    </div>
-                    <div class="form-input">
-                        <label for="email">Email Id</label>
-                        <input type="email" name="email" id="" placeholder="Email Id...">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" placeholder="Your message..."></textarea>
                     </div>
                     <input type="submit" value="Submit" class="submit-btn">
                 </form>

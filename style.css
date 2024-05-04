@@ -507,9 +507,16 @@ a{
     padding: 40px;
     border-radius: 10px;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.enquiry-form-inner .form-group{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
+    align-items: center;
 }
 
 .enquiry-form-inner .form-input {
@@ -522,13 +529,13 @@ a{
     font-weight: 700;
 }
 
-.enquiry-form-inner .form-input input {
+.enquiry-form-inner .form-input input, .enquiry-form-inner .form-input textarea {
     padding: 12px 10px;
     border: 1px solid #eaeaea;
     background-color: #fafafa;
 }
 
-.enquiry-form-inner .form-input input:focus{
+.enquiry-form-inner .form-input input:focus, .enquiry-form-inner .form-input textarea:focus{
     outline: none;
     border: 2px solid #eaeaea;
 }
@@ -538,13 +545,13 @@ a{
     background-color: #F7971D;
     border-radius: 5px;
     font-size: 22px;
-    padding: 15px 30px;
-    float: inline-end;
+    padding: 12px 30px;
     font-family: 'HeadingFont';
     font-weight: 400;
     border: none;
+    display: flex;
     width: max-content;
-    text-align: center;
+    margin: 0 auto;
 }
 
 /* ENQUIRY FORM CSS END */
@@ -680,10 +687,14 @@ a{
         font-size: 24px;
     }
 
-    .slider-container .slider-content, .about-inner, .why-choose-cards, .staff-inner, .contact-banner-inner, .footer-content .container, .enquiry-form-inner form{
+    .slider-container .slider-content, .about-inner, .why-choose-cards, .staff-inner, .contact-banner-inner, .footer-content .container, .enquiry-form-inner .form-group{
         grid-template-columns: repeat(1,1fr);
         gap: 20px;
         text-align: center;
+    }
+
+    .enquiry-form-inner form {
+        padding: 25px;
     }
 
     .left-content{
